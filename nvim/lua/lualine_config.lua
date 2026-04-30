@@ -1,7 +1,7 @@
-local ok, plugin = pcall(require, "lualine")
+local ok, lualine = pcall(require, "lualine")
 if ok then
   local srcery = require('lualine_themes.srcery')
-  plugin.setup {
+  lualine.setup {
     options = {
       icons_enabled = false,
       theme = srcery,

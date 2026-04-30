@@ -25,8 +25,7 @@ vim.pack.add({
   -- easy-motion
   'https://github.com/smoka7/hop.nvim',
   -- fzf
-  'https://github.com/junegunn/fzf',
-  'https://github.com/junegunn/fzf.vim',
+  'https://github.com/ibhagwan/fzf-lua',
   -- lsp設定
   'https://github.com/neovim/nvim-lspconfig',
   -- 構文解析
@@ -34,8 +33,6 @@ vim.pack.add({
   -- lsp関連
   'https://github.com/hrsh7th/cmp-nvim-lsp',
   'https://github.com/hrsh7th/nvim-cmp',
-  'https://github.com/nvim-lua/plenary.nvim', -- fzf-lsp.nvim依存
-  'https://github.com/DanSM-5/fzf-lsp.nvim',
   -- インデント可視化
   'https://github.com/lukas-reineke/indent-blankline.nvim',
   -- 不要な行末スペースの可視化
@@ -53,12 +50,12 @@ require('lualine_config')
 require('smoka7-hop_config')
 require('reset_keymap')
 require('nvim_treesitter_config')
-require('fzf_vim_config')
 require('lsp_config')
 require('nvim_cmp_config')
 require('indent_blankline_config')
 require('user_keymap')
 require('user_func')
+require('fzf_lua_config')
 
 -- 操作中のnvimのソケットパスをファイルに出力
 vim.api.nvim_create_autocmd({ "FocusGained", "VimEnter" }, {
